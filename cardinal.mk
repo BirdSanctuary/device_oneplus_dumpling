@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The LineageOS Open Source Project
+#                    Cardinal-AOSP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from dumpling device
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cardinal stuff.
+$(call inherit-product, vendor/cardinal/common.mk)
 
-PRODUCT_NAME := lineage_dumpling
+PRODUCT_NAME := cardinal_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
